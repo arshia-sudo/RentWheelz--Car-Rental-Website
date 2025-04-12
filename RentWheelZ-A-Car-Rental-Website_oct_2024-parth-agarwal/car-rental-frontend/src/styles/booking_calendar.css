@@ -1,0 +1,74 @@
+
+.react-calendar {
+    background-color: #333;
+    /* color: #f0f0f0; */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    
+    color: white !important;
+}
+
+
+.react-calendar__navigation button {
+    color: #f0f0f0;
+    background: none;
+    border: none;
+}
+
+.react-calendar__navigation button:enabled:hover,
+.react-calendar__navigation button:enabled:focus {
+    background-color: #444;
+    color: #ffffff;
+    border-radius: 4px;
+}
+
+.react-calendar__tile {
+    background: #444;
+    color: #f0f0f0;
+    border-radius: 6px;
+}
+
+.react-calendar__tile:enabled:hover,
+.react-calendar__tile:enabled:focus {
+    background: #555;
+    color: #ffffff;
+}
+
+.react-calendar__tile--now {
+    background: #555;
+    color: #f0f0f0;
+    font-weight: bold;
+}
+
+.react-calendar__tile--now:enabled:hover,
+.react-calendar__tile--now:enabled:focus {
+    background: #666;
+}
+
+/* Style for the active (selected) dates */
+.react-calendar__tile--active {
+    background: rgba(30, 144, 255, 0.5); /* Transparent light blue */
+    color: white;
+    border-radius: 6px;
+}
+
+.react-calendar__tile--active:enabled:hover,
+.react-calendar__tile--active:enabled:focus {
+    background: rgba(30, 144, 204, 0.7); /* Darker transparent light blue */
+}
+
+.react-calendar--selectRange .react-calendar__tile--hover {
+    background: rgba(30, 144, 255, 0.5); 
+}
+
+.react-calendar__tile:disabled{
+    background:  rgba(14, 60, 98, 0.7); /* Dark blue for disabled dates */
+    color: #666;
+}
+
+/* Style for disabled dates on hover */
+.react-calendar__tile--disabled:enabled:hover,
+.react-calendar__tile--disabled:enabled:focus {
+    background: darkblue; /* Keep dark blue on hover */
+}

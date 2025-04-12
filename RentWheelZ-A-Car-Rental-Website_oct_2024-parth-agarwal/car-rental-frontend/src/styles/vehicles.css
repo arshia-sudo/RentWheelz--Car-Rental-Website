@@ -1,0 +1,164 @@
+
+
+
+.vehicleContainer select {
+    width: 200px;
+    padding: 10px;
+    margin: 10px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.vehicleContainer input[type="text"]{
+    width: 500px;
+    padding: 10px;
+    margin: 10px 10px;
+    border-radius: 5px;
+    background-color: rgba(40, 198, 255, 0.888);
+    color:white;
+}
+
+.vehicleContainer  input[type="text"]::placeholder {
+    color: rgb(255, 255, 255); /* Set placeholder text color to black */
+}
+
+.vehicleContainer input[type="text"]:focus,
+.vehicleContainer select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.filterVehicle {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.vehicleContainer {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 10vh;
+}
+
+
+.vehicleContainer ul {
+    list-style-type: none;
+    padding: 0;
+    width: 85%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.vehicleContainer li {
+    position: relative; /* Position relative for the pseudo-element */
+    background-color: black; /* Set background to black */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    color: white;
+    padding: 15px;
+    margin: 2%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 21%;
+    height: 40vh;
+    
+    background: linear-gradient(45deg, #000000d9, #367cb8, #000000de);
+}
+.vehicleContainer li:hover{
+    cursor:pointer;
+    transform:translateY(-10px);
+    background: linear-gradient(45deg, #367cb8,  #000000d9, #367cb8);
+}
+
+
+
+.vehicleDetail{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.vehicleContainer li img {
+    border-radius: 5px;
+    margin: 10px;
+    height: auto;
+    width: 80%;
+}
+
+
+
+.vehicleContainer h2 {
+    margin: 5px 0;
+    color: #edf6ff;
+}
+
+.vehicleContainer h1 {
+    font-size: 4rem;
+    background: linear-gradient(135deg, rgb(0, 99, 180), rgb(0, 213, 255), rgb(0, 93, 164));
+
+    background-size: 25% 25%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient-animation 6s ease infinite;
+    height: 9vh;
+    margin-bottom: 3vh !important;
+    
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Keyframes for animated gradient */
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.vehicleContainer p {
+    margin: 5px;
+    font-size: 1rem;
+    color: #C5C6C7;
+    width: 100%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+.vehicleBtn {
+    background-color: rgba(31, 150, 255, 0.671);
+    color: white; 
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin: 10px;
+}
+
+.vehicleBtn:hover {
+    background-color: #00bbff;
+    transform: scale(1.1);
+}
